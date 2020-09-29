@@ -1,9 +1,0 @@
-C:\users\Jeffrey\documents\epicodus\csharp\todolist.solution\ToDoList\bin\Debug\netcoreapp3.1\ToDoList.deps.json
-C:\users\Jeffrey\documents\epicodus\csharp\todolist.solution\ToDoList\bin\Debug\netcoreapp3.1\ToDoList.dll
-C:\users\Jeffrey\documents\epicodus\csharp\todolist.solution\ToDoList\bin\Debug\netcoreapp3.1\ToDoList.pdb
-C:\users\Jeffrey\documents\epicodus\csharp\todolist.solution\ToDoList\obj\Debug\netcoreapp3.1\ToDoList.csprojAssemblyReference.cache
-C:\users\Jeffrey\documents\epicodus\csharp\todolist.solution\ToDoList\obj\Debug\netcoreapp3.1\ToDoList.AssemblyInfoInputs.cache
-C:\users\Jeffrey\documents\epicodus\csharp\todolist.solution\ToDoList\obj\Debug\netcoreapp3.1\ToDoList.AssemblyInfo.cs
-C:\users\Jeffrey\documents\epicodus\csharp\todolist.solution\ToDoList\obj\Debug\netcoreapp3.1\ToDoList.csproj.CoreCompileInputs.cache
-C:\users\Jeffrey\documents\epicodus\csharp\todolist.solution\ToDoList\obj\Debug\netcoreapp3.1\ToDoList.dll
-C:\users\Jeffrey\documents\epicodus\csharp\todolist.solution\ToDoList\obj\Debug\netcoreapp3.1\ToDoList.pdb
