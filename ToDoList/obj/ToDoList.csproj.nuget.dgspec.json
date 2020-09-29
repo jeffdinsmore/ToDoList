@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\users\\Jeffrey\\documents\\epicodus\\csharp\\todolist.solution\\ToDoList\\ToDoList.csproj": {}
+    "C:\\users\\Jeffrey\\documents\\epicodus\\csharp\\Todolist.solution\\ToDoList\\ToDoList.csproj": {}
   },
   "projects": {
-    "C:\\users\\Jeffrey\\documents\\epicodus\\csharp\\todolist.solution\\ToDoList\\ToDoList.csproj": {
+    "C:\\users\\Jeffrey\\documents\\epicodus\\csharp\\Todolist.solution\\ToDoList\\ToDoList.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\users\\Jeffrey\\documents\\epicodus\\csharp\\todolist.solution\\ToDoList\\ToDoList.csproj",
+        "projectUniqueName": "C:\\users\\Jeffrey\\documents\\epicodus\\csharp\\Todolist.solution\\ToDoList\\ToDoList.csproj",
         "projectName": "ToDoList",
-        "projectPath": "C:\\users\\Jeffrey\\documents\\epicodus\\csharp\\todolist.solution\\ToDoList\\ToDoList.csproj",
+        "projectPath": "C:\\users\\Jeffrey\\documents\\epicodus\\csharp\\Todolist.solution\\ToDoList\\ToDoList.csproj",
         "packagesPath": "C:\\Users\\Jeffrey\\.nuget\\packages\\",
-        "outputPath": "C:\\users\\Jeffrey\\documents\\epicodus\\csharp\\todolist.solution\\ToDoList\\obj\\",
+        "outputPath": "C:\\users\\Jeffrey\\documents\\epicodus\\csharp\\Todolist.solution\\ToDoList\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -20,13 +20,13 @@
           "C:\\Users\\Jeffrey\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "netcoreapp2.2"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
+          "netcoreapp2.2": {
             "projectReferences": {}
           }
         },
@@ -37,23 +37,20 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
+        "netcoreapp2.2": {
+          "dependencies": {
             "Microsoft.NETCore.App": {
-              "privateAssets": "all"
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
         }
       }
     }
