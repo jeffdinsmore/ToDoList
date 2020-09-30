@@ -16,12 +16,16 @@
       <ul>
         @foreach (Item item in Model)
         {
-          <li>@item.Description</li>
+          <li><a href='/items/@item.Id'>@item.Description</a></li>
         }
       </ul>
       <button class="btn btn-secondary"><a href="/items/new">Add a new item.</a></button>
       <br><br>
       <button class="btn btn-secondary"><a href="/">Go Back to Homepage</a></button>
+      <br><br>
+      <form action="/items/delete" method="post">
+        <button type="submit" name="button" class="btn btn-secondary">Clear All Items</button>
+      </form>
     </div>
   </body>
 </html
