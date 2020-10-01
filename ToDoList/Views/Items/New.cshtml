@@ -1,17 +1,13 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>To Do List</title>
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
-  </head>
-  <body>
-    <div class="container">
-      <br>
-      <form action="/items" method="post">
-        <label for="description">Add a new item</label>
-        <input id="description" name="description" type="text">
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
-    </div>
-  </body>
-</html
+@{
+  Layout = "_Layout";
+}
+<div class="container">
+  <br>
+  <h1>Add a new item to @Model.Name</h1>
+  <form action="/categories/@Model.Id/items" method="post">
+    <input id="categoryId" name="categoryId" type="hidden" value="@Model.Id">
+    <label for="itemDescription">Item Description</label>
+    <input id="itemDescription" name="itemDescription" type="text">
+    <button type='submit'>Add Item</button>
+  </form>
+</div>
