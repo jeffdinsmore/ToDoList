@@ -36,5 +36,18 @@ namespace ToDoList.Controllers
       Item thisItem = _db.Items.FirstOrDefault(items => items.ItemId == id);
       return View(thisItem);
     }
+
+     public ActionResult Search()
+    {
+      return View();
+    }
+
+    [HttpPost]
+    public ActionResult Search(string description)
+    {
+      List<Item> model = _db.Items.Where(x => x.Description.Contains(description)).ToList();
+      List<Item> SortedList = model.OrderBy(o => o.Description).ToList();
+      return View("Index", SortedList);
+    }
   }
 }
