@@ -10,7 +10,6 @@
   @using (Html.BeginForm())
   {
     @Html.HiddenFor(model => model.ItemId)
-
     @Html.LabelFor(model => model.Description)
     @Html.EditorFor(model => model.Description)
     @Html.LabelFor(model => model.Category)
@@ -19,5 +18,4 @@
     <input type="submit" value="Save" />
   }
   <h5>@Html.ActionLink("Back to list", "Index")</h5>
-  <h5>@Html.ActionLink("Edit Item", "Edit", new { id = Model.ItemId })</h5>
 </div>

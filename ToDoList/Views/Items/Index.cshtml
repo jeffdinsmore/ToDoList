@@ -15,9 +15,9 @@
   <ul>
   @foreach(Item item in Model)
   {
-      <li>@Html.ActionLink($"{item.Description}", "Details", new { id = item.ItemId }) | @item.Category.Name</li>
+    <li>@Html.ActionLink($"{item.Description}", "Details", new { id = item.ItemId }) | @item.Category.Name</li>
   }
 </ul>
 <h5>@Html.ActionLink("Add new item", "Create")</h5>
-
+<h5>@Html.ActionLink("Home", "Index", "Home")</h5>
 </div>
