@@ -1,0 +1,16 @@
+@using ToDoList.Models;
+@model List<ToDoList.Models.Category>;
+
+@{
+  Layout = "_Layout";
+}
+
+<div class="container">
+  @using (Html.BeginForm())
+  {
+    @Html.Label("name")
+    @Html.TextBox("name")
+    <input type="submit" value="Search" />
+  }
+
+</div>

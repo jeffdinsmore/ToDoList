@@ -69,19 +69,17 @@ namespace ToDoList.Controllers
       _db.SaveChanges();
       return RedirectToAction("Index");
     }
+    public ActionResult Search()
+    {
+      return View();
+    }
 
-    
-    // public ActionResult Search()
-    // {
-    //   return View();
-    // }
-
-    // [HttpPost]
-    // public ActionResult Search(string description)
-    // {
-    //   List<Category> model = _db.Categories.Where(x => x.Description.Contains(description)).ToList();
-    //   List<Category> SortedList = model.OrderBy(o => o.Description).ToList();
-    //   return View("Index", SortedList);
-    // }
+    [HttpPost]
+    public ActionResult Search(string name)
+    {
+      List<Category> model = _db.Categories.Where(x => x.Name.Contains(name)).ToList();
+      List<Category> SortedList = model.OrderBy(o => o.Name).ToList();
+      return View("Index", SortedList);
+    }
   }
 }
