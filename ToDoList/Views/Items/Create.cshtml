@@ -3,17 +3,17 @@
 @{
   Layout = "_Layout";
 }
-<div class="container">
-  <br>
-  <h4>Add a new task</h4>
-  @using (Html.BeginForm())
-  {
-    @Html.LabelFor(model => model.Description)
-    @Html.TextBoxFor(model => model.Description)
 
-    @Html.LabelFor(model => model.Category)
-    @Html.DropDownList("CategoryId")
-    <input type="submit" value="Add new task" />
-  }
-  <h5>@Html.ActionLink("Show all items", "Index")</h5>
-</div>
+<br>
+<h4>Add a new task</h4>
+@using (Html.BeginForm())
+{
+  @Html.LabelFor(model => model.Description)
+  @Html.TextBoxFor(model => model.Description)
+
+  @Html.Label("Select Category")
+  @Html.DropDownList("CategoryId")
+  
+  <input type="submit" value="Add new task" class="btn btn-default" />
+}
+<h5>@Html.ActionLink("Show all items", "Index")</h5>

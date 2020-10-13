@@ -17,7 +17,6 @@
   {
     @* <li>@Html.ActionLink($"{item.Description}", "Details", new { id = item.ItemId }) | @item.Category.Name</li> *@
     <li>@Html.ActionLink($"{item.Description}", "Details", new {id = item.ItemId}) </li>
-    <li>@item.Category.Name</li>
   }
 </ul>
 <h5>@Html.ActionLink("Add new item", "Create")</h5>

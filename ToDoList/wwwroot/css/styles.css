@@ -4,7 +4,10 @@ img {
   border: 10px solid gray;
   border-radius: 10px;
 }
-
+div#header {
+  height: 60px;
+  background-color: rgb(206, 174, 174);
+}
 div#footer {
   position:fixed;
   bottom:0px;

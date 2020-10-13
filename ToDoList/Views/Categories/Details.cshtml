@@ -1,5 +1,5 @@
 @model ToDoList.Models.Category
-@using ToDoList.Models;
+@* @using ToDoList.Models; *@
 @{
   Layout = "_Layout";
 }
@@ -8,17 +8,21 @@
   <h2>Category Details</h2>
   <hr />
   <h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)<h3>
-  <ul>
+  
   @if (@Model.Items.Count == 0)
   {
-    <p>no items found</p>
+    <p>This category does not contain any items</p>
   }
-
-  @foreach (Item item in @Model.Items)
+else
+{
+  <h4>Items the category contains:</h4>
+  <ul>
+  @foreach(var join in Model.Items)
   {
-    <li>Description: @item.Description</li>
+    <li>@join.Item.Description</li>
   }
   </ul>
+}
   <h5>@Html.ActionLink("Back to categories", "Index")</h5>
   <h5>@Html.ActionLink("Edit Category", "Edit", new { id = Model.CategoryId })</h5>
   <h5>@Html.ActionLink("Delete Category", "Delete", new { id = Model.CategoryId })</h5>
