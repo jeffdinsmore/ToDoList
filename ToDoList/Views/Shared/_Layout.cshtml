@@ -8,9 +8,9 @@
   </head>
   <body>
     <div class="container">
-      @Html.Partial("Header")
+      @await Html.PartialAsync("Header")
       @RenderBody()
-      @* @Html.Partial("Footer") *@
+      @* @await Html.PartialAsync("Footer") *@
       </div>
   </body>
 </html>
